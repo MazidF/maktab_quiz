@@ -1,14 +1,13 @@
-package com.example.myapplication
+package com.example.myapplication.quiz1
 
 import android.os.Bundle
-import android.text.format.DateUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
-import com.example.myapplication.databinding.FragmentFristBinding
+import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentSecondBinding
 import okhttp3.*
 import java.io.IOException

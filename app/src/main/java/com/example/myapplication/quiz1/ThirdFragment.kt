@@ -1,11 +1,11 @@
-package com.example.myapplication
+package com.example.myapplication.quiz1
 
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentThirdBinding
 
 

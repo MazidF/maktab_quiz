@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.quiz1
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,12 +7,11 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
+import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentFristBinding
 import okhttp3.OkHttpClient
 import okhttp3.Request
-import java.util.concurrent.Callable
 import java.util.concurrent.Executors
-import java.util.concurrent.Future
 
 class FirstFragment : Fragment(R.layout.fragment_frist) {
     lateinit var client: OkHttpClient
@@ -43,15 +42,6 @@ class FirstFragment : Fragment(R.layout.fragment_frist) {
             .url("https://picsum.photos/seed/picsum/200/300")
             .build()
 
-/*        val future:Future<String> = executor.submit(object : Callable<String> {
-            override fun call(): String {
-                val response = client.newCall(request).execute()
-                return response.body()?.string() ?: "Something is WRONG!!"
-            }
-        })
-
-        binding.text.text = future.get()*/
-
         Thread {
             val response = client.newCall(request).execute()
             response.body()?.run {
@@ -59,5 +49,20 @@ class FirstFragment : Fragment(R.layout.fragment_frist) {
                 liveData.postValue(string)
             }
         }.start()
+
+//        startExecutor(request)
     }
+
+/*    fun startExecutor(request: Request) {
+        val handler = Handler(Looper.getMainLooper()) // activity -> mainLooper
+        handler.post {
+            val future: Future<String> = executor.submit(object : Callable<String> {
+                override fun call(): String {
+                    val response = client.newCall(request).execute()
+                    return response.body()?.string() ?: "Something is WRONG!!"
+                }
+            })
+            liveData.postValue(future.get())
+        }
+    }*/
 }

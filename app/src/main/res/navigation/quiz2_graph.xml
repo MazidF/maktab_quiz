@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/quiz2_graph"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentSearch"
+        android:name="com.example.myapplication.quiz2.fragments.FragmentSearch"
+        android:label="FragmentSearch" />
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.myapplication.quiz2.fragments.FragmentHome"
+        android:label="FragmentHome" />
+</navigation>
