@@ -31,7 +31,7 @@ class FragmentListUser : Fragment(R.layout.fragment_users) {
                 }
 
                 override fun onQueryTextChange(newText: String?): Boolean {
-                    (quiz3Users.adapter as Quiz3Adapter).filter.filter(newText)
+                    (quiz3Users.adapter as? Quiz3Adapter ?: return false).filter.filter(newText)
                     return false
                 }
 

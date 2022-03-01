@@ -16,6 +16,7 @@ import com.example.myapplication.quiz3.model.UserList
 import com.example.myapplication.quiz3.model.UserListItem
 
 class Quiz3Adapter(fragment: Fragment, val userList: UserList) : RecyclerView.Adapter<Quiz3Adapter.MyHolder>(), Filterable {
+    val mainList = ArrayList<UserListItem>(userList)
     val inflater = LayoutInflater.from(fragment.requireContext())
     val controller = fragment.findNavController()
 
@@ -34,11 +35,15 @@ class Quiz3Adapter(fragment: Fragment, val userList: UserList) : RecyclerView.Ad
     override fun getFilter(): Filter {
         return object : Filter() {
             override fun performFiltering(p0: CharSequence?): FilterResults {
-                val list = userList.filter {
-                    it.firstName == p0 || it.lastName == p0 || it.nationalCode == p0 || it._id == p0
-                }
                 val filterResult = FilterResults()
-                filterResult.values = list
+                if (p0!!.isBlank()) {
+                    filterResult.values = mainList
+                } else {
+                    val list = mainList.filter {
+                        it.firstName.contains(p0, true) || it.lastName.contains(p0, true) || it.nationalCode.contains(p0, true) || it._id.contains(p0, true)
+                    }
+                    filterResult.values = list
+                }
                 return filterResult
             }
 
