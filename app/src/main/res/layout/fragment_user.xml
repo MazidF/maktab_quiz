@@ -47,5 +47,14 @@
             android:layout_height="wrap_content"
             android:text='@{user.nationalCode, default="nationalCode"}' />
 
+        <TextView
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{user.hobbies.toString().replaceAll(",", "\n"), default="music, \ngame"}' />
+
+
     </LinearLayout>
 </layout>

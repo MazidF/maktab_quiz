@@ -2,6 +2,7 @@ package com.example.myapplication.quiz3.fragments
 
 import android.os.Bundle
 import android.view.View
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -24,6 +25,17 @@ class FragmentListUser : Fragment(R.layout.fragment_users) {
     private fun init() {
         val context = requireContext()
         with(binding) {
+            quiz3Search.setOnQueryTextListener(object: SearchView.OnQueryTextListener{
+                override fun onQueryTextSubmit(query: String?): Boolean {
+                    return false
+                }
+
+                override fun onQueryTextChange(newText: String?): Boolean {
+                    (quiz3Users.adapter as Quiz3Adapter).filter.filter(newText)
+                    return false
+                }
+
+            })
             binding.quiz3Users.apply {
                 layoutManager = GridLayoutManager(context, 1)
             }
