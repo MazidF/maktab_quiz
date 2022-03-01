@@ -5,14 +5,21 @@
       <map>
         <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_main.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_quiz3.xml" value="0.264" />
         <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/fragment_frist.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/fragment_home.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/fragment_quiz3_signin.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/fragment_search.xml" value="0.1" />
         <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/fragment_second.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/fragment_third.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/fragment_user.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/fragment_users.xml" value="0.2477355072463768" />
         <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/photo_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/user_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/menu/bottom_menu.xml" value="0.13055555555555556" />
         <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/menu/quiz2_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/vcc/AndroidStudioProjects/MyApplication5/app/src/main/res/menu/quiz3.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
